@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Cerita</title>
+    <style>
+        /* Menggunakan font Garamond yang sangat elegan untuk nuansa sastra klasik */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #faf9f6;
+            /* Warna putih kertas linen */
+            color: #2b2b2a;
+            /* Hitam arang lembut, ramah di mata */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+
+        .profile-section {
+            margin-bottom: 35px;
+        }
+
+        .profile-img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            opacity: 0.85;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            color: #1c1c1b;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #757471;
+            margin-bottom: 45px;
+        }
+
+        .bio-details {
+            margin-bottom: 45px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a4a48;
+        }
+
+        .bio-details p {
+            margin-bottom: 8px;
+            font-weight: 300;
+        }
+
+        /* Garis Pembatas Tipis Sekali */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #c4c3bf;
+            margin: 0 auto 40px;
+        }
+
+        /* Bagian Hobi / Ketertarikan */
+        .hobbies-section h2 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #757471;
+            margin-bottom: 20px;
+        }
+
+        .hobby-item {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #4a4a48;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        /* Tautan Kontak yang Halus */
+        .contact-trigger {
+            display: inline-block;
+            margin-top: 60px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            color: #757471;
+            text-decoration: none;
+            border-bottom: 1px solid #d1cfcb;
+            padding-bottom: 3px;
+            cursor: pointer;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .contact-trigger:hover {
+            color: #1c1c1b;
+            border-color: #1c1c1b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile-section">
+            <img src="Profil ajil.jpg" alt="Fotoku" class="profile-img">
+        </div>
+
+        <h1>Nadzila Sakina</h1>
+        <p class="tagline">"A dream is a wish your heart makes."</p>
+
+        <div class="bio-details">
+            <p>Lahir di Majalengka, 2010</p>
+            <p>Seorang Pengagum Cerita Fiksi</p>
+            <p>Cucu J.K Rowling</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="hobbies-section">
+            <h2>Waktu Luang</h2>
+            <div class="hobby-item">Journaling</div>
+            <div class="hobby-item">Bikers</div>
+            <div class="hobby-item">Reading</div>
+            <div class="hobby-item">Scrafting</div>
+            <div class="hobby-item">imajinering</div>
+        </div>
+
+        <span class="contact-trigger" onclick="openNotes()">Just calling me</span>
+
+    </div>
+
+    <script>
+        function openNotes() {
+            alert("Terima kasih telah singgah. Semoga harimu menyenangkan ");
+        }
+    </script>
+
+</body>
+
+</html>

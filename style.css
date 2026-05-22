@@ -5,14 +5,14 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: white;
     color: #333;
-    line-height: 1.6;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -52,34 +52,44 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
+    padding-top: 80px;
     background: white;
 }
 
-.hero-content {
-    flex: 1;
-}
-
 .hallo-text {
-    color: #91b0c5;
     font-size: 1.5rem;
+    color: #7ca0b8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .main-name {
     font-size: 3.5rem;
     margin: 10px 0;
-    color: #2c3e50;
+    color: #334556;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInName 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideInName {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .job-title {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    font-weight: bold;
-}
-
-.hero-image-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 1rem;
+    color: #627e91;
+    margin-bottom: 20px;
 }
 
 .profile-img {
@@ -88,18 +98,52 @@ body {
     object-fit: cover;
     cursor: pointer;
     transition: all 0.5s ease;
+    margin-top: -50px;
 }
 
 .profile-img:hover {
-    transform: rotate(360deg);
+    transform: scale(1.05);
 }
 
+.separator-line {
+    width: 80px;
+    border: none;
+    border-top: 3px solid #334d6e;
+    margin: 20px 0;
+    opacity: 0.8;
+    border-radius: 2px;
+}
 
-.aku {
-    text-align: center;
-    padding: 50px 10%;
+.hero-description {
+    max-width: 500px;
     font-size: 1rem;
-    color: #8f8f8f;
+    line-height: 1.7;
+    color: #9d9f9f;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.media-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.media-social a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media-social img {
+    width: 18px;
+    height: 18px;
 }
 
 #skill {
@@ -109,8 +153,8 @@ body {
 }
 
 #skill h2 {
+    text-align: center;
     margin-bottom: 50px;
-    font-size: 2.5rem;
 }
 
 .skills-container {
@@ -145,7 +189,7 @@ body {
 
 #gallery {
     padding: 100px 10%;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 #gallery h2 {
@@ -188,7 +232,7 @@ body {
 
 
 #contact {
-    padding: 100px 10%;
+    padding: 100px 10% 140px 10%;
     background-color: white;
 }
 
@@ -234,21 +278,73 @@ body {
     background-color: #2980b9;
 }
 
+.main-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #334d6e;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, color 0.3s ease;
+}
 
-footer {
-    background: hsla(195, 100%, 95%, 0.725);
-    background-size: cover;
-    color: #585b65;
+.main-name:hover {
+    color: #7299b4;
+    transform: scale(1.05);
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    background: #7ca0b8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background: #334556;
+}
+
+.penutup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.penutup img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+
+.penutup img:hover {
+    transform: rotate(360deg);
+}
+
+.thanks {
     text-align: center;
-    padding: 16px;
-    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-footer a {
-    color: #636f7e;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.thanks p {
+    font-size: 1rem;
+    color: #627e91;
+    margin-bottom: 10px;
+    margin-top: 2px;
 }
