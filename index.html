@@ -22,16 +22,27 @@
             <h2 class="hallo-text">Hallo</h2>
             <h1 class="main-name">I'm Nadzila Sakina</h1>
             <p class="job-title">Junior Web Developer || UI/UX Designer</p>
+            <hr class="separator-line">
+
+            <p class="hero-description">
+                I'm a person who has a keen interest in the design layout. I think presenting an attractive design
+                is a matter of concern in developing a branding of products. I focus on proper composition and
+                visual decoration details in order to make it more professional.
+            </p>
+
+            <div class="media-social">
+                <a href="https://github.com/sndzilaa/" target="_blank">
+                    <img src="GitHub-logo.png" alt="GitHub Logo">
+                </a>
+                <a href="https://www.instagram.com/snndzl_/" target="_blank">
+                    <img src="instagram-icons.png" alt="Instagram Logo">
+                </a>
+            </div>
         </div>
         <div class="hero-image-container">
-            <img src="Profil.png" alt="Nadzila Profile" class="profile-img">
+            <img src="Profil.png" alt="Nadzila Sakina" class="profile-img">
         </div>
     </section>
-    <section id="about">
-        <p class="aku">I'm Nadzila Sakina, a junior web developer and UI/UX designer. I have a passion for creating
-            beautiful and functional websites that provide an excellent user experience. I have experience in HTML, CSS,
-            JavaScript, and design tools such as Figma and Notion. I am always eager to learn new technologies and
-            improve my skills to create better web applications.</p>
     </section>
     <section id="skill">
         <h2>My Skills</h2>
@@ -89,28 +100,32 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"> <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <button type="submit" id="send-btn">Send</button>
-            </form>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+        <div class="penutup">
+            <img src="beyond.jpg">
+        </div>
+        <div class="thanks">
+            <p>Thank you for scrolling through my portfolio!</p>
+            <p>click the link below for
+            <main><a href="Nadzila_biodata.html" target="_blank">Nadzila Sakina's Biodata</a></main>
+            </p>
         </div>
     </section>
-
-    <button id="scrollTopBtn" title="Go to top">↑</button>
-    <footer>
-        <p>&copy; 2026 Nadzila Sakina. All rights reserved. </p>
-    </footer>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
