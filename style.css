@@ -237,7 +237,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* --- STYLE SECTION SERTIFIKAT --- */
 .certificate-buttons {
     display: flex;
     justify-content: center;
@@ -439,94 +438,89 @@ body {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-    .navbar ul {
-        padding: 0 10px;
-    }
-
-    .navbar ul li {
-        margin: 0 10px;
-    }
-
-    .navbar ul li a {
-        font-size: 0.85rem;
-    }
-
+    /* --- PERBAIKAN TOTAL HERO SECTION (HOME) DI HP --- */
     .hero-section {
-        padding: 100px 20px 40px 20px;
-        text-align: center;
+        padding: 110px 15px 30px 15px !important;
+        min-height: auto !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    /* Memaksa kontainer utama menjadi vertikal lurus */
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Mengatur area gambar berada di paling atas */
+    .hero-image {
+        display: block !important;
+        margin: 0 auto 20px auto !important;
+        width: 150px !important;
+        /* Batasi ukuran lingkaran gambar di HP agar tidak kebesaran */
+        height: 150px !important;
+    }
+
+    .profile-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Mengatur area teks di bawah gambar */
+    .hero-text {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
     }
 
     .hallo-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem !important;
+        margin-bottom: 5px !important;
+        display: block !important;
     }
 
     .main-name {
-        font-size: 1.8rem !important;
-        line-height: 1.2;
+        font-size: 1.6rem !important;
+        /* Ukuran nama yang pas di layar HP */
+        line-height: 1.2 !important;
+        margin: 5px 0 !important;
+        display: block !important;
+        width: 100% !important;
+        transform: none !important;
+        /* Matikan animasi gerak desktop yang merusak layout HP */
+        position: static !important;
+        text-align: center !important;
     }
 
     .job-title {
-        font-size: 0.95rem;
+        font-size: 0.9rem !important;
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+        display: block !important;
+    }
+
+    .separator-line {
+        margin: 15px auto !important;
+        width: 40% !important;
+        display: block !important;
     }
 
     .hero-description {
-        font-size: 0.9rem;
-        padding: 0;
+        font-size: 0.88rem !important;
+        line-height: 1.5 !important;
         text-align: justify;
+        /* Rata kanan-kiri agar teks deskripsi rapi */
+        padding: 0 10px !important;
+        margin-top: 10px !important;
+        display: block !important;
     }
-
-    section {
-        padding: 60px 15px !important;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-    }
-
-
-    .skills-container,
-    .gallery-container,
-    .certificate-container {
-        grid-template-columns: 3fr !important;
-        gap: 20px;
-        padding: 0;
-    }
-
-    .gallery-item img,
-    .certificate-item img {
-        height: 180px;
-    }
-
-    #contact-form {
-        width: 100%;
-        max-width: 100%;
-        padding: 20px 15px;
-    }
-
-    #contact-form button {
-        width: 100%;
-        padding: 12px;
-    }
-
-    .penutup img {
-        width: 100% !important;
-        height: auto;
-    }
-
-    .thanks {
-        padding: 30px 15px;
-        font-size: 0.95rem;
-    }
-
-    #scrollTopBtn {
-        bottom: 80px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
 }
