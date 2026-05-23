@@ -440,8 +440,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar padding {
-        padding: 10px 0;
+
+    .navbar ul {
+        padding: 0 10px;
     }
 
     .navbar ul li {
@@ -449,41 +450,75 @@ body {
     }
 
     .navbar ul li a {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .hero-section {
-        padding-top: 100px;
+        padding: 100px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .hallo-text {
+        font-size: 1.5rem;
     }
 
     .main-name {
-        font-size: 2rem;
+        font-size: 1.8rem !important;
+        line-height: 1.2;
     }
 
     .job-title {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .hero-description {
-        font-size: 0.95rem;
-        padding: 0 15px;
+        font-size: 0.9rem;
+        padding: 0;
+        text-align: justify;
     }
 
+    section {
+        padding: 60px 15px !important;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+
+    .skills-container,
     .gallery-container,
     .certificate-container {
-        grid-template-columns: 1fr !important;
-        gap: 15px;
-        padding: 10px;
+        grid-template-columns: 3fr !important;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .gallery-item img,
+    .certificate-item img {
+        height: 180px;
     }
 
     #contact-form {
-        width: 90%;
-        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
     }
 
     #contact-form button {
         width: 100%;
-        border-radius: 10px;
+        padding: 12px;
+    }
+
+    .penutup img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .thanks {
+        padding: 30px 15px;
+        font-size: 0.95rem;
     }
 
     #scrollTopBtn {
@@ -491,6 +526,7 @@ body {
         right: 20px;
         width: 40px;
         height: 40px;
-        font-size: 16px;
+        font-size: 18px;
     }
+
 }
